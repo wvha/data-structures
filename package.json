@@ -1,0 +1,23 @@
+{
+  "name": "data-structures",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wvha/data-structures.git"
+  },
+  "keywords": [
+    "data",
+    "structures"
+  ],
+  "author": "William Ha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wvha/data-structures/issues"
+  },
+  "homepage": "https://github.com/wvha/data-structures#readme"
+}
