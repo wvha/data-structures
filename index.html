@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Data Structures</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lib/mocha.css" />
+    <script src="lib/jquery.js"></script>
+    <script src="lib/chai.js"></script>
+    <script src="lib/mocha.js"></script>
+    
+    <script>
+      mocha.setup('bdd');
+      window.expect = chai.expect;
+      $(function() {
+        window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();
+      })
+    </script>
+
+    <script type="text/javascript" src="queue.js"></script>
+
+    <script type="text/javascript" src="spec/queueSpecs.js"></script>
+
+  </head>
+  <body>
+    <div id="mocha"></div>
+  </body>
+</html>
