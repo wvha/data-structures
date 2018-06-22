@@ -21,7 +21,7 @@ describe('queue', function() {
     expect(queue.size()).to.equal(0);
   });
 
-  it('removes the oldest item in the list', function() {
+  it('should remove the oldest item in the list', function() {
     queue.upqueue('a');
     queue.upqueue('b');
     expect(queue.dequeue()).to.equal('a');
