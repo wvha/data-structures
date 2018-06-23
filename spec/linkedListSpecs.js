@@ -1,7 +1,7 @@
 describe('linked list', function() {
 
   beforeEach(function() {
-    linkedList = new LinkedList();
+    linkedList = LinkedList();
   });
 
   it('should have a head and tail', function() {
@@ -10,22 +10,22 @@ describe('linked list', function() {
   });
 
   it('should have methods including \'addToTail\', \'removeHead\', and \'contains\'', function() {
-    expect(linkedList.addToTail).to.be.a.('function');
-    expect(linkedList.removeHead).to.be.a.('function');
-    expect(linkedList.contains).to.be.a.('function');
+    expect(linkedList.addToTail).to.be.a('function');
+    expect(linkedList.removeHead).to.be.a('function');
+    expect(linkedList.contains).to.be.a('function');
   });
 
   it('should assign new tail when new nodes are added', function() {
     linkedList.addToTail('a');
     linkedList.addToTail('b');
-    expect(linkedList.tail).to.equal('b');
+    expect(linkedList.tail.value).to.equal('b');
   });
 
   it('should remove head from the list when removeHead is called', function() {
     linkedList.addToTail('a');
     linkedList.addToTail('b');
     linkedList.removeHead();
-    expect(linekdList.head).to.equal('b');
+    expect(linkedList.head.value).to.equal('b');
   });
 
   it('should contain a value that was added', function() {
