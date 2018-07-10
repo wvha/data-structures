@@ -28,7 +28,7 @@ treeMethods.contains = function(target) {
 }
 
 treeMethods.traverse = function(callback) {
-  cb(this.value);
+  callback(this.value);
 
   if(!this.children) { return; }
   for (let i = 0; i < this.children.length; i++) {
@@ -42,4 +42,4 @@ const extend = function(to, from) {
   for (var key in from) {
     to[key] = from[key];
   }
-
+}

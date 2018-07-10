@@ -4,12 +4,16 @@ describe('tree', function() {
     tree = Tree();
   });
 
-  it('should have methods "addChild" and "contains", and properties named "value" and "children"', function() {
+  it('should have methods "addChild", "contains", and "traverse"', function() {
     expect(tree.addChild).to.be.a('function');
     expect(tree.contains).to.be.a('function');
+    expect(tree.traverse).to.be.a('function');
+  });
+
+  it('should have properties named "value" and "children"', function() {
     expect(tree.hasOwnProperty('value')).to.equal(true);
     expect(tree.hasOwnProperty('children')).to.equal(true);
-  });
+  })
 
   it('should add children to tree', function() {
     tree.addChild(3);
